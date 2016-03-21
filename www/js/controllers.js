@@ -1,5 +1,14 @@
 angular.module('starter.controllers', [])
 
+.controller('IntroCtrl', function($scope, $localStorage, $state) {
+    var firstRun = $localStorage.get('firstRun', true);
+
+    if (firstRun === true) {
+    } else {
+        $state.go('/tab/dash');
+    }
+})
+
 .controller('DashCtrl', function($scope) {})
 
 .controller('ChatsCtrl', function($scope, Chats) {
