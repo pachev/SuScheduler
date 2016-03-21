@@ -2,6 +2,7 @@
   "name": "SuScheduler",
   "app_id": "",
   "gulpStartupTasks": [
+    "karma",
     "sass",
     "watch"
   ],

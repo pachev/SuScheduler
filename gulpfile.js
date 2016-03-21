@@ -15,10 +15,9 @@ var paths = {
 
 gulp.task('default', ['sass']);
 
-gulp.task('test', function(done) {
+gulp.task('karma', function(done) {
   karma.start({
-    configFile: __dirname + '/tests/unit-tests.conf.js',
-    singleRun: true
+    configFile: __dirname + '/tests/karma.conf.js'
   }, function() {
       done();
   });
