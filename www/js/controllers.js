@@ -1,11 +1,8 @@
 angular.module('starter.controllers', [])
 
-.controller('IntroCtrl', function($scope, localStorage, $state) {
-    $scope.firstRun = localStorage.get('firstRun', true);
-
+.controller('IntroCtrl', function($scope) {
     if ($scope.firstRun === true) {
     } else {
-        $state.go('/tab/dash');
     }
 
     /**

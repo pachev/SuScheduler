@@ -1,18 +1,13 @@
 
 describe("IntroCtrl", function() {
-    beforeEach(module('ionic'));
-    beforeEach(module('starter.services'));
     beforeEach(module('starter.controllers'));
 
     var $scope, $controller;
 
-    beforeEach(inject(function(_$controller_){
+    beforeEach(inject(function(_$rootScope_, _$controller_){
         $scope = {};
         $controller = _$controller_('IntroCtrl', { $scope: $scope });
     }));
-
-    it("show the introduction on first run", function() {
-    });
 
     describe('$scope.test', function() {
         it('returns what you send it', function() {

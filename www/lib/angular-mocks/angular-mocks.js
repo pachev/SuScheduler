@@ -5,8 +5,6 @@
  */
 (function(window, angular, undefined) {
 
-'use strict';
-
 /**
  * @ngdoc object
  * @name angular.mock
