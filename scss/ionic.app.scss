@@ -38,9 +38,14 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
     .title-bar p {
         font-size: 1.2rem;
     }
+
     .skip {
         font-size: 1rem;
         text-align: center;
         text-decoration: underline;
+    }
+
+    .alternate-login {
+        padding-top: 30%;
     }
 }

@@ -1,12 +1,25 @@
 angular.module('starter.controllers', [])
 
-.controller('IntroCtrl', function($scope, $localStorage, $state) {
-    var firstRun = $localStorage.get('firstRun', true);
+.controller('IntroCtrl', function($scope, localStorage, $state) {
+    $scope.firstRun = localStorage.get('firstRun', true);
 
-    if (firstRun === true) {
+    if ($scope.firstRun === true) {
     } else {
         $state.go('/tab/dash');
     }
+
+    /**
+     * Authenticates a user
+     * @param {object} auth - The authentication token or object
+     * @returns {object} - User auth token
+     */
+    $scope.authenticate = function(auth) {
+
+    };
+
+    $scope.test = function(num) {
+        return num;
+    };
 })
 
 .controller('DashCtrl', function($scope) {})
